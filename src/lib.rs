@@ -205,7 +205,7 @@ pub fn templatehash(
         .consensus_encode(&mut engine)
         .expect(ENGINE_EXPECT);
 
-    let annex_present: u8 = if sha_annex.is_some() { 1u8 } else { 0u8 };
+    let annex_present = sha_annex.is_some() as u8;
 
     annex_present
         .consensus_encode(&mut engine)
