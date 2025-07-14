@@ -23,8 +23,7 @@ use bitcoin::hashes::{sha256, sha256t_hash_newtype, Hash};
 const ENGINE_EXPECT: &str = "HashEngine::write() never fails";
 
 sha256t_hash_newtype! {
-    /// Optional documentation details here.
-    /// Summary is always generated.
+    /// Hash Tag defined in BIP-???
     pub struct TemplateHashTag = hash_str("TemplateHash");
 
     /// A template hash
